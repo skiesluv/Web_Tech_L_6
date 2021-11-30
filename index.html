@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Lab 4</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/navigation.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body_class">
+    <div class="navbar">
+      <a href="index.html">Обчислення площі фігури</a>
+      <a href="questions.html">Опитування</a>
+      <a href="registration.html">Реєстрація</a>
+      <a href="#home">Калькулятор</a>
+      <a href="gallery.html">Галерея</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+    </div>
+
+    <form name="form1" class="form_1">
+      <h3>Введіть значення сторони квадрата/радіуса/катета:</h3>
+      а=<input type="text" name="a" size="10" />
+      <hr class="hr_1" />
+      <input id="kv" type="radio" name="fv" value="1" onClick="ds()" />Площа
+      квадрата<br />
+      <input id="kr" type="radio" name="fv" value="3.14" onClick="ds()" />Площа
+      круга<br />
+      <input id="tr" type="radio" name="fv" value="0.5" onClick="ds()" />Площа
+      прямокутного трикутника<br />
+      <input id="l" type="radio" name="fv" value="3.14" onClick="ds()" />Довжина
+      кола<br />
+      <input id="v" type="radio" name="fv" value="3.14" onClick="ds()" />Об'єм
+      кулі<br />
+
+      <input type="reset" name="reset" value="Очистити дані" />
+      <hr class="hr_1" />
+      Площа: <input id="res" type="text" name="res" size="10" />
+    </form>
+
+    <footer class="footer_web1">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>© All Rights Reserved by Nazar Mutsyn</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

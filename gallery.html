@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Lab 4</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/navigation.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/gallery.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body_class">
+    <div class="navbar">
+      <a href="index.html">Обчислення площі фігури</a>
+      <a href="questions.html">Опитування</a>
+      <a href="registration.html">Реєстрація</a>
+      <a href="#home">Калькулятор</a>
+      <a href="gallery.html">Галерея</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="gal">
+      <img
+        src="images/427393.jpg"
+        alt=""
+        id="mainImg"
+        width="1280"
+        height="720"
+      />
+      <!-- onclick="window.open(this.src,'mywindow','width = 500, height = 500')" -->
+    </div>
+
+    <div id="smallimg">
+      <img
+        src="images/427393.jpg"
+        alt=""
+        id="smlImg"
+        width="350"
+        height="200"
+        onclick="smallImgChange(0)"
+      />
+      <img
+        src="images/2848170.jpg"
+        alt=""
+        id="smlImg"
+        width="350"
+        height="200"
+        onclick="smallImgChange(1)"
+      />
+      <img
+        src="images/mini-cat.jpg"
+        alt=""
+        id="smlImg"
+        width="350"
+        height="200"
+        onclick="smallImgChange(2)"
+      />
+      <img
+        src="images/ducky.gif"
+        alt=""
+        id="smlImg"
+        width="350"
+        height="200"
+        onclick="smallImgChange(3)"
+      />
+    </div>
+    <div id="btn">
+      <button
+        class="button-82-pushable"
+        role="button"
+        onclick="show_image('right')"
+      >
+        <span class="button-82-shadow"></span>
+        <span class="button-82-edge"></span>
+        <span class="button-82-front text"> Next </span>
+      </button>
+      <button
+        class="button-82-pushable"
+        role="button"
+        onclick="show_image('left')"
+      >
+        <span class="button-82-shadow"></span>
+        <span class="button-82-edge"></span>
+        <span class="button-82-front text"> Previous </span>
+      </button>
+    </div>
+
+    <footer class="footer_web1">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>© All Rights Reserved by Nazar Mutsyn</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/gallery.js"></script>
+  </body>
+</html>

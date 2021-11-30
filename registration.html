@@ -1,0 +1,173 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Lab 4</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/navigation.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/register.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body_class">
+    <div class="navbar">
+      <a href="index.html">Обчислення площі фігури</a>
+      <a href="questions.html">Опитування</a>
+      <a href="registration.html">Реєстрація</a>
+      <a href="#home">Калькулятор</a>
+      <a href="gallery.html">Галерея</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contain reg">
+      <form id="signup" class="form" name="form1">
+        <h1>Sign Up</h1>
+        <div class="form-field">
+          <label for="firstname"></label>
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            placeholder="Name"
+            autocomplete="off"
+          />
+          <small></small>
+        </div>
+
+        <div class="form-field">
+          <label for="surname"></label>
+          <input
+            type="text"
+            name="surname"
+            id="surname"
+            placeholder="Surname"
+            autocomplete="off"
+          />
+          <small></small>
+        </div>
+
+        <div class="form-field">
+          <label for="email"></label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Email"
+            autocomplete="off"
+          />
+          <small></small>
+        </div>
+
+        <div class="form-field">
+          <label for="password"></label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            autocomplete="off"
+          />
+          <small></small>
+        </div>
+
+        <div class="form-field">
+          <label for="confirm-password"></label>
+          <input
+            type="password"
+            name="confirm-password"
+            id="confirm-password"
+            placeholder="Confirm Password"
+            autocomplete="off"
+          />
+          <small></small>
+        </div>
+
+        <fieldset>
+          <legend>Languages you know</legend>
+          <div>
+            <input type="checkbox" id="eng" name="interest" value="coding" />
+            <label for="eng">English</label>
+          </div>
+          <div>
+            <input type="checkbox" id="ukr" name="interest" value="music" />
+            <label for="ukr">Ukrainian</label>
+          </div>
+          <div>
+            <input type="checkbox" id="rus" name="interest" value="coding" />
+            <label for="rus">Russian</label>
+          </div>
+          <div>
+            <input type="checkbox" id="fr" name="interest" value="music" />
+            <label for="fr">French</label>
+          </div>
+          <div>
+            <input type="checkbox" id="sp" name="interest" value="coding" />
+            <label for="sp">Spanish</label>
+          </div>
+          <div>
+            <input type="checkbox" id="jp" name="interest" value="music" />
+            <label for="jp">Japanese</label>
+          </div>
+          <div id="checkBoxValid">
+            <input type="checkbox" id="ger" name="interest" value="coding" />
+            <label for="ger">German</label>
+          </div>
+          <small></small>
+        </fieldset>
+
+        <div>
+          <p id="dobp">Write your date of birth</p>
+          <input type="text" id="dateofbirth" name="text1" />
+          <small></small>
+        </div>
+
+        <textarea
+          name=""
+          id="textarea"
+          cols="45"
+          rows="5"
+          maxlength="500"
+          placeholder="Your interests (Max length 500)"
+        ></textarea>
+
+        <div>
+          <p id="photop">Upload your photo here</p>
+          <input type="file" id="myFile" name="filename" />
+          <small></small>
+        </div>
+
+        <div class="form-field">
+          <input type="submit" value="Sign Up" id="singupbtn" />
+        </div>
+      </form>
+    </div>
+
+    <footer class="footer_web1">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>© All Rights Reserved by Nazar Mutsyn</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/validation.js"></script>
+  </body>
+</html>

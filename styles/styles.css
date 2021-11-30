@@ -1,0 +1,18 @@
+.body_class {
+  font-family: "Montserrat", sans-serif;
+}
+
+.h1_test {
+  font-weight: bold;
+  font-size: 35px;
+  margin: auto;
+}
+
+.form_1 {
+  margin: 50px;
+  /* min-height: 100%; */
+}
+
+.form_2 {
+  margin: 50px;
+}
